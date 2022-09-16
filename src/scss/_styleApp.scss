@@ -1,0 +1,9 @@
+main {
+    max-width: 1400px;
+    min-width: 450px;
+    height: 68vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-template-rows: 1fr 1fr;
+}

@@ -1,0 +1,14 @@
+@use 'resets';
+@use 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+$background: hsl(224, 46%, 9%);
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: $background;
+    font-family: 'Rubik', sans-serif;
+}

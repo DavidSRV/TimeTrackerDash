@@ -1,0 +1,82 @@
+@use '../../scss/colors';
+
+
+.contenedor_1 {
+    display: grid;
+    background-color: colors.$fondo1;
+    border-radius: 15px;
+    width: 16.75rem;
+    height: 500px;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 5;
+
+    & .contenedor_2 {
+        display: grid;
+        background-color: colors.$fondo;
+        border-radius: 15px;
+        height: 350px;
+        color: white;
+
+        & img {
+            display: block;
+            width: 80px;
+            border: 3px solid white;
+            border-radius: 60%;
+            position: relative;
+            top: 30px;
+            left: 40px;
+        }
+
+        & h1{
+            width: 200px;
+            font-weight: 300;
+            font-size: 2.5rem;
+            position: relative;
+            bottom: 5%;
+            left: 40px;
+        }
+
+        & p {
+            width: 200px;
+            height: 20px;
+            position: relative;
+            top: 20px;
+            left: 40px;
+            font-weight: 200;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.588);
+        }
+
+    }
+
+    & .buttons {
+
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+
+
+        & button {
+            display: block;
+            width: 80px;
+            padding: 2px;
+            align-self: flex-start;
+            border: none;
+            margin: 0 0 15px 40px;
+            background-color: transparent;
+            font-weight: bold;
+            text-align: left;
+            font-size: 1rem;
+            color: colors.$button-letter;
+            cursor: pointer;
+
+            &:hover {
+                color: colors.$white;
+            }
+        }
+
+
+
+    }
+}
