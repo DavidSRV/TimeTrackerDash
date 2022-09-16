@@ -1,13 +1,18 @@
-import './_styleCards.scss'
+import "./_styleCards.scss";
+import { dots, exercise } from "../../utils/utils";
+
 
 export default function Cards() {
   return (
     <div className={`card __card${null}`}>
-        <img src={null} alt="" />
+      <div className="activity">{exercise}</div>
       <div className={`card_2 cardtype_${null}`}>
-        <p>{}activity</p>
-        <h1>{}time</h1>
-        <p>{}info</p>
+        <div className="dots">
+          <p>{}activity</p>
+          <>{dots}</>
+        </div>
+        <h1 className="time">{}time</h1>
+        <p className="info">{}info</p>
       </div>
     </div>
   );
