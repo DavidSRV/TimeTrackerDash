@@ -3,6 +3,7 @@ import { jeremy } from "../../utils/utils";
 import "./_styleCard.scss";
 
 export default function CardMain() {
+
   return (
     <>
       <div className="contenedor_1">

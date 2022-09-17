@@ -2,35 +2,28 @@
 
 .card {
     min-width: 200px;
-    height: 180px;
-    background-color: colors.$Lightred;
+    height: 200px;
     border-radius: 15px;
     cursor: pointer;
 
-    & .activity{
+    & .activity {
         display: flex;
         justify-content: flex-end;
         height: 20px;
         margin: 0 10px;
-        
+
     }
 
     .card_2 {
         position: relative;
         top: 30px;
-        height: 100px;
         background-color: colors.$fondo1;
         color: colors.$white;
         height: 100%;
         border-radius: 15px;
-        cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
-        & :hover {
-            background-color: colors.$fondoIluminate;
-        }
 
         & .dots {
             display: flex;
@@ -40,21 +33,55 @@
             top: 1.5rem;
         }
 
-        & .time{
-            width: min-content;
+        & .time {
+            display: flex;
+            width: 100px;
             position: relative;
             top: 1.2rem;
             left: 2.8rem;
             font-size: 3rem;
+
         }
 
         & .info {
+            display: flex;
             width: min-content;
             position: relative;
             bottom: 1.2rem;
             left: 2.8rem;
-
         }
 
     }
+
+
+
+
+}
+
+.card_2:hover {
+    background-color: colors.$fondo;
+}
+
+.__cardWork {
+    background-color: colors.$Work;
+}
+
+.__cardPlay {
+    background-color: colors.$Play;
+}
+
+.__cardStudy {
+    background-color: colors.$Study;
+}
+
+.__cardExercise {
+    background-color: colors.$Exercise;
+}
+
+.__cardSocial {
+    background-color: colors.$Social;
+}
+
+.__cardSelfCare {
+    background-color: colors.$Selfcare;
 }

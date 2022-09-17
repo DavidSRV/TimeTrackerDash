@@ -7,12 +7,12 @@ function App() {
     <div className="App">
       <main>
         <CardMain />
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
+        <Cards activity='Work'/>
+        <Cards activity='Play'/>
+        <Cards activity='Study'/>
+        <Cards activity='Exercise'/>
+        <Cards activity='Social'/>
+        <Cards activity='SelfCare'/>
       </main>
     </div>
   );

@@ -6,12 +6,12 @@
     background-color: colors.$fondo1;
     border-radius: 15px;
     width: 16.75rem;
-    height: 500px;
+    height: 530px;
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 5;
 
-    & .contenedor_2 {
+    .contenedor_2 {
         display: grid;
         background-color: colors.$fondo;
         border-radius: 15px;
@@ -28,7 +28,7 @@
             left: 40px;
         }
 
-        & h1{
+        & h1 {
             width: 200px;
             font-weight: 300;
             font-size: 2.5rem;
@@ -45,7 +45,7 @@
             left: 40px;
             font-weight: 200;
             font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.588);
+            color: rgba(255, 255, 255, 0.582);
         }
 
     }
@@ -56,18 +56,18 @@
         flex-direction: column;
         align-content: flex-start;
 
-
         & button {
             display: block;
             width: 80px;
             padding: 2px;
             align-self: flex-start;
             border: none;
-            margin: 0 0 15px 40px;
+            margin: 10px 0 15px 40px;
             background-color: transparent;
-            font-weight: bold;
+            font-weight: normal;
+            letter-spacing: 1px;
             text-align: left;
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: colors.$button-letter;
             cursor: pointer;
 
