@@ -1,10 +1,12 @@
 import React from "react";
+import { useChangeDataContext } from "../../context/Context";
 import { jeremy } from "../../utils/utils";
 import "./_styleCard.scss";
 
-export default function CardMain() {
+export default function CardMain({activity}) {
 
   return (
+
     <>
       <div className="contenedor_1">
         <div className="contenedor_2">
@@ -13,9 +15,9 @@ export default function CardMain() {
           <h1>Jeremy Robson</h1>
         </div>
         <div className="buttons">
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+          <button onClick={null}>Daily</button>
+          <button >Weekly</button>
+          <button >Monthly</button>
         </div>
       </div>
     </>
