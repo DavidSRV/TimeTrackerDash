@@ -1,39 +1,21 @@
 import "./_styleCards.scss";
 import { dots } from "../../utils/utils";
-import { useEffect, useState } from "react";
 import {objFav} from '../../utils/utils.js'
-import { useChangeDataContext } from "../../context/Context";
+import { useTimeFrames } from "../../context/TimeProvider";
 
-export default function Cards({ activity }) {
-
-  const context = useChangeDataContext();
-
-  const [favicon, setFavicon] = useState(null);
-
-  function render(){
-    return(
-      objFav[activity]
-    );
-  }
-
-  const renderImg = render();
-
-  useEffect(function(){
-    setFavicon(renderImg);
-  }, [renderImg])
-
-  
+export default function Cards({ title, timeframes }) {
+  const { time } = useTimeFrames()
 
   return (
-    <div className={`card __card${activity}`}>
-      <div className="activity">{favicon}</div>
+    <div className={`card __card${title}`}>
+      <div className="activity">{objFav[title]}</div>
       <div className={`card_2`}>
         <div className="dots">
-          <p>{activity}</p>
+            <p>{title}</p>
           <>{dots}</>
         </div>
-        <h1 className="time">{}hrs</h1>
-        <p className="info">Last{` ${null}-${null}`}</p>
+        <h1 className="time">{timeframes[time].current}hrs</h1>
+        <p className="info">{`Last ${time} - ${timeframes[time].previous} hrs`}</p>
       </div>
     </div>
   );

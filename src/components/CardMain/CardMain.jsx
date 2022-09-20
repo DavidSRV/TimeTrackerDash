@@ -1,35 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useChangeDataContext } from "../../context/Context";
+import { useTimeFrames } from "../../context/TimeProvider";
 import { jeremy } from "../../utils/utils";
 import "./_styleCard.scss";
 
-export default function CardMain({ activity }) {
-  const context = useChangeDataContext();
-
-  const [infoU, setInfoU] = useState({});
-
-  function updateInfoDaily() {
-    let update = context.data.map((info) => ({
-      activity:info.title,
-      timeframes:{
-        current: info.timeframes.daily.current,
-        previous: info.timeframes.daily.previous,
-      }
-      
-    }));
-
-    return update;
-  }
-
-  const setInfo = updateInfoDaily();
-
-  useEffect(function(){
-    setInfoU(setInfo);
-  }, [])
-
-  context.info = infoU;
-
+export default function CardMain() {
   
+  const {setTime} = useTimeFrames()
 
   return (
     <>
@@ -40,9 +15,9 @@ export default function CardMain({ activity }) {
           <h1>Jeremy Robson</h1>
         </div>
         <div className="buttons">
-          <button onClick={null}>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+          <button onClick={() => setTime("daily")}>Daily</button>
+          <button onClick={() => setTime("weekly")}>Weekly</button>
+          <button onClick={() => setTime("monthly")}>Monthly</button>
         </div>
       </div>
     </>
