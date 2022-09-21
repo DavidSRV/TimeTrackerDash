@@ -6,10 +6,7 @@
     background-color: colors.$fondo1;
     border-radius: 15px;
     width: 16.75rem;
-    height: 530px;
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row: span 2;
 
     .contenedor_2 {
         display: grid;
