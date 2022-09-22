@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TimeTrackerDash/static/css/main.a1ee30ec.css",
+    "main.js": "/TimeTrackerDash/static/js/main.b975f593.js",
+    "static/media/image-jeremy.png": "/TimeTrackerDash/static/media/image-jeremy.71cd41f11bee24c1ded3.png",
+    "index.html": "/TimeTrackerDash/index.html",
+    "main.a1ee30ec.css.map": "/TimeTrackerDash/static/css/main.a1ee30ec.css.map",
+    "main.b975f593.js.map": "/TimeTrackerDash/static/js/main.b975f593.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1ee30ec.css",
+    "static/js/main.b975f593.js"
+  ]
+}
